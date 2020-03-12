@@ -1,7 +1,7 @@
 # Hungry-Hitz
 
 #Wireframe 
-![wireframe](./wireframe/QuickHitz.png)
+![wireframe](./wireframe/Quick-Hitz.png)
 
 Game Instruction:
 
