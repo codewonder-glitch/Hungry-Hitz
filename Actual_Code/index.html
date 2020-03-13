@@ -11,38 +11,60 @@
             height:100%;
             overflow:hidden;
         }
-        #main{align-items:center;align-content: center;}
+        #main #imgm{  width:100%;}
 #container{
 
     display:Grid;
     grid-template-columns: auto auto auto;
-    background-color: blue;
+    grid-template-rows: auto auto auto;
+    background-color: white;
+    align-items: stretch;
     height:550px;
-    width:1000px;
+    width:550px;
     position: absolute;
     top:5%;
-    left:222px;
+    left:500px;
 } 
+#bstart{
+
+    border:3px solid black;
+    position: absolute;
+    bottom:5%;
+    right:310px;
+    width:120px;
+    height:50px;
+    font-size: 40px;
+    
+}
+#container > div img{
+max-width:100%;
+max-height: 100%;
+align-self: stretch;
+border:3px solid black;
+
+}
 
     </style>
 </head>
 <body>
-    <div id="main"><img width="100%" id="imgm" src="../Images/Grass.jpg">
+    <div id="main"><img id="imgm" src="../Images/eating.jpg">
 <div id="container">
-    <div id="sym1"></div>
-    <div id="sym1"></div>
-    <div id="sym1"></div>
-    <div id="sym1"></div>
-    <div id="sym1"></div>
-    <div id="sym1"></div>
-    <div id="sym1"></div>
-    <div id="sym1"></div>
-    <div id="sym1"></div>
-    
+    <div id="sym1"><img src="../Images/Milkshake.jpg"></div>
+    <div id="sym2"><img src="../Images/Burger.jpg"></div>
+    <div id="sym3"><img src="../Images/Fries.jpg"></div>
+    <div id="sym4"><img src="../Images/Cola.jpg"></div>
+    <div id="sym5"><img src="../Images/Chicken.jpg"></div>
+    <div id="sym6"><img src="../Images/Milkshake.jpg"></div>
+    <div id="sym7"><img src="../Images/Pizza.jpg"></div>
+    <div id="sym8"><img src="../Images/Cola.jpg"></div>
+    <div id="sym9"><img src="../Images/Pizza.jpg"></div>
+
 </div>
+<button id="bstart" type="button">Start</button>
 </div>
-<button>Start</button>
-    <script src="script.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="code.js"></script>
 </body>
 </html>
 

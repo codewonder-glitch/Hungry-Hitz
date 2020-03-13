@@ -6,11 +6,18 @@
 Game Instruction:
 
 ## Game Instructions // Game Rules // etc. 
-1. The user gets to click the start button
+1. The user could add credit in the credit box by clicking the box
 
-2. Symbol position chnges.If it aligns in the same raw or column credits are awarded
+2. Then Start button gets enabled
 
-3. The player gets to play the game until user credit is zero.
+3. Once the user click the start button,Symbol position chnages.If it aligns in the same raw or column credits are awarded
+
+4. The player gets to play the game until user credit is zero.
+
+5. The player loses if the credit is lesser than what the player initially put afer 10 spin or so
+
+6. If the credit is more player wons the game
+
 
 ## Schedule (Objectives/Goals)
 ### Wednesday
