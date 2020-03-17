@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+
+            margin:0;
+            height:100%;    
+            overflow:hidden;
+        }
+        #main #imgm{  width:100%;}
+#container{
+
+    display:Grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    background-color: white;
+    align-items: stretch;
+    height:550px;
+    width:550px;
+    position: absolute;
+    top:5%;
+    left:450px;
+} 
+/* #bstart{
+
+    border:3px solid black;
+    position: absolute;
+    bottom:5%;
+    right:310px;
+    width:120px;
+    height:50px;
+    font-size: 40px;
+    
+} */
+#container > div img{
+max-width:100%;
+max-height: 100%;
+align-self: stretch;
+border:3px solid black;
+
+
+}
+.form-inline {
+  display: flex;
+  position :absolute;
+  bottom:5%;
+  align-items: center;
+  justify-content: center;
+  right:440px;
+
+}
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 20px 5px 0;
+  /* padding: 10px 1px; */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: larger;
+  width:95px;
+  height:40px;
+}
+.form-inline button {
+  padding: 15px 30px;
+  background-color: red;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-size: larger;
+}
+.form-inline label {
+        margin: 5px 10px 5px 0;
+        text-align: center;
+  font-size: x-large;
+      }
+    </style>
+</head>
+<body>
+    <audio id="spin"><source src="../Sounds/Spin.wav" type="audio/wav"></audio>  
+    
+        <audio id="won"><source src="../Sounds/round_end.wav" type="audio/wav"></audio>   
+            <audio id="lost"><source src="../Sounds/lost.wav" type="audio/wav"></audio>   
+                <audio id="addcredit"><source src="../Sounds/addcredits.wav" type="audio/wav"></audio>   
+    <div id="main"><img id="imgm" src="../Images/eating.jpg">
+<div id="container">
+    <div id="sym1"><img id="img1" src="../Images/Milkshake.jpg"></div>
+    <div id="sym2"><img src="../Images/Burger.jpg"></div>
+    <div id="sym3"><img src="../Images/Fries.jpg"></div>
+    <div id="sym4"><img src="../Images/Cola.jpg"></div>
+    <div id="sym5"><img src="../Images/Chicken.jpg"></div>
+    <div id="sym6"><img src="../Images/Milkshake.jpg"></div>
+    <div id="sym7"><img src="../Images/Pizza.jpg"></div>
+    <div id="sym8"><img src="../Images/Cola.jpg"></div>
+    <div id="sym9"><img src="../Images/Pizza.jpg"></div>
+
+</div>
+<!-- <button id="bstart" type="button">Start</button> -->
+<form class="form-inline">
+    <label for="email">Credits</label>
+    <input type="text" 
+    id="credits"  value="Pls add Credits"><br><br>
+    <label for="email">Game Pays</label>ls'
+    <input type="text" 
+    id="gamepay"  value="Game Pays"><br><br>
+    <button id="bstart" type="button">Start</button>
+</form>
+
+</div>
+<!-- <script src='/path/to/jquery.keyframes[.min].js'></script> -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="code.js"></script>
+</body>
+</html>
+
