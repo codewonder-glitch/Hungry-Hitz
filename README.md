@@ -14,9 +14,9 @@ Game Instruction:
 
 4. The player gets to play the game until user credit is zero.
 
-5. The player loses if the credit is lesser than what the player initially put afer 10 spin or so
+5. The player loses if the game play amount  is lesser than the credit
 
-6. If the credit is more player wons the game
+6. If the gameplay amount is more than the credit player wons the game
 
 
 ## Schedule (Objectives/Goals)

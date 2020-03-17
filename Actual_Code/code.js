@@ -37,6 +37,7 @@ function init()
 {
     $(gamepay).attr("disabled",true);
     $(bstart).attr("disabled",true);
+    $(uwon).hide();
 }
 init();
 
@@ -46,6 +47,7 @@ $(Info).bind("click", function(event){
 
 $(credits).bind("click", function(event){
     event.preventDefault();
+    $(uwon).hide();
     if (self.playStatus != 'playing')  
     $(addcredit).get(0).play();
     credit+=2;
@@ -71,6 +73,9 @@ $(bstart).bind("click", function(event){
       $(credits).val(credit);
     if(credit==0){
       // alert(Gamepays);
+
+      $(uwon).text("you won "+Gamepays+ " dollars");
+      $(uwon).show();
       Gamepays=0;
       $(gamepay).val(Gamepays);
     }

@@ -30,7 +30,7 @@ html,body{
     bottom:5%;
     align-items: center;
     justify-content: center;
-    right:440px;
+    right:380px;
 
 }
 .form-inline input {
@@ -44,14 +44,24 @@ html,body{
     width:95px;
     height:40px;
 }
-.form-inline button {
+.form-inline #bstart{
     padding: 15px 30px;
     background-color: red;
     border: 1px solid #ddd;
     color: white;
     cursor: pointer;
     text-align: center;
-    font-size: larger;
+    font-size: x-large;
+}
+.form-inline #Info{
+    margin: 5px 10px 5px 0;
+    padding: 15px 30px;
+    background-color: green;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: x-large;
 }
 .form-inline label {
     margin: 5px 10px 5px 0;
@@ -59,5 +69,16 @@ html,body{
     font-size: xx-large;
     color:white;
      
+}
+#uwon{
+
+    position: absolute;
+    bottom:0.0001%;
+    text-align: center;
+    align-self: center;
+    background-color: white;
+    font-size: x-large;
+    left:620px;
+
 }
   
