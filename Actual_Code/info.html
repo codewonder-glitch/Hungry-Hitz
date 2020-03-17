@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+html,body{
+    margin:0;
+    height:100%;    
+    overflow:hidden;
+}
+#container{
+    display:Grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    background-color: white;
+    align-items: stretch;
+    height:450px;
+    width:450px;
+    position: absolute;
+    top:5%;
+    left:450px;
+} 
+
+#container > div {
+    max-width:100%;
+    max-height: 100%;
+    align-self: stretch;
+    border:1px solid black;
+}
+.money{
+
+    width:150%;
+    height:100%;
+    background-color: lightblue;
+    font-size: xx-large;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+}
+ #home{
+     position: absolute;
+    margin: 5px 10px 5px 0;
+    padding: 15px 30px;
+    background-color: green;
+    border: 1px solid #ddd;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: x-large;
+    right:1000px;
+    bottom:5%;
+}
+        </style>
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="container">
+            <div id="sym4"><img src="../Images/Cola.jpg"></div>
+            <div class="money">1$</div>
+            <div id="sym3"><img src="../Images/Fries.jpg"></div>
+            <div class="money"> 2$</div>
+            <div id="sym2"><img src="../Images/Burger.jpg"></div>
+            <div class="money">3$</div>
+            <div id="sym1"><img id="img1" src="../Images/Milkshake.jpg"></div>
+            <div class="money">4$</div>
+            <div id="sym5"><img src="../Images/Chicken.jpg"></div>
+            <div class="money">5$</div>
+            <div id="sym6"><img src="../Images/Pizza.jpg"></div>
+            <div class="money">6$</div>
+        </div>
+        <button id="home" type="button" onclick="window.location.href='index.html';"> Start</button>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

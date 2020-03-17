@@ -1,7 +1,6 @@
 
 var rowarr=[];
 var credit=0;
-var session_gamepays=0;
 var Gamepays=0;
 var a=$(container).children();
 var imgdiv=a.children();
@@ -41,6 +40,9 @@ function init()
 }
 init();
 
+$(Info).bind("click", function(event){
+  window.location.href="info.html";
+});
 
 $(credits).bind("click", function(event){
     event.preventDefault();
@@ -63,16 +65,16 @@ $(bstart).bind("click", function(event){
  
   Random=()=>
   {
-    Gamepays=0;
-    $(gamepay).val(Gamepays);
+    
       credit--;
     if(credit>=0)
       $(credits).val(credit);
     if(credit==0){
-      alert(session_gamepays);
-      session_gamepays=0;
+      // alert(Gamepays);
+      Gamepays=0;
+      $(gamepay).val(Gamepays);
     }
- ka
+ 
    if(credit<=0 )
    {
       if (self.playStatus != 'playing') {
@@ -102,11 +104,11 @@ Animater=()=>{
           if(rowarr[x]==rowarr[z])
         {
           var Amt=Number(Object.keys(img)[rowarr[x]]);
-          credit+=Amt;
+          
           Gamepays+=Amt;
-          session_gamepays+=Amt;
+          
           $(gamepay).val(Gamepays);
-          $(credits).val(credit);       
+               
           if (self.playStatus != 'playing') {
             $(won).get(0).play();
           }
